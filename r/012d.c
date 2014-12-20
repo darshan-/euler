@@ -1,3 +1,5 @@
+// Built with `R CMD SHLIB 012d.c`
+
 int countFactors(int n) {
   int count = 0;
 
