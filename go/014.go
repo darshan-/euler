@@ -16,6 +16,7 @@ func main() {
 		if count > max {
 			max = count
 			which = i
+			//println("Max:", max, "starts at", which)
 		}
 	}
 	println("Max:", max, "starts at", which)
