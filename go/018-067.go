@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-const filename = "067-triangle.txt"
+const filename = "../data/067-triangle.txt"
 
 func readFile() (nums [][]int) {
 	f, err := os.Open(filename)
