@@ -1,5 +1,5 @@
-triangle <- function(file) {
-    con  <- file(file, open = "r")
+triangle <- function(filename) {
+    con  <- file(filename, open = "r")
     nums <- list()
 
     while (length(oneLine <- readLines(con, n = 1, warn = FALSE)) > 0) {
