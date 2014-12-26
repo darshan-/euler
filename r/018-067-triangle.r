@@ -2,9 +2,8 @@ triangle <- function(filename) {
     con  <- file(filename, open = "r")
     nums <- list()
 
-    while (length(oneLine <- readLines(con, n = 1, warn = FALSE)) > 0) {
-        v <- list(as.numeric(strsplit(oneLine, " ")[[1]]))
-        nums <- c(nums, v)
+    while (length(line <- readLines(con, n = 1, warn = FALSE)) > 0) {
+        nums <- c(nums, list(as.numeric(strsplit(line, " ")[[1]])))
     }
 
     for (r in (length(nums)-1):1) {
