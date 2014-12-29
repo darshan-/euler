@@ -1,5 +1,8 @@
 #!/usr/bin/Rscript
 
+require(compiler)
+enableJIT(3)
+
 sumOfFactorialOfDigits <- function(n) {
     sum <- 0
     div <- 1
